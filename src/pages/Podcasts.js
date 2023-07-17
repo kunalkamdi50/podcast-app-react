@@ -32,10 +32,10 @@ function PodcastsPage() {
       };
     }, [dispatch]);
   
-    console.log(podcasts);
+   console.log("Podcasts",podcasts);
   
-    var filteredPodcasts = podcasts.filter((item) =>
-      item.title.trim().toLowerCase().includes(search.trim().toLowerCase())
+    var filteredPodcasts = podcasts?.filter((item) =>
+      item?.title?.trim().toLowerCase().includes(search?.trim().toLowerCase())
     );
   return (
     <div>
